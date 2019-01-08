@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background-image: url(./src/bgp.png);
+}
+input{
+    height: 20px;
+    width: 444px;
+    margin-left: 20px;
+    background-color: #fff;
+    margin-top: 9px;
+    border: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(150, 144, 144,0.5);
+}
+.nav_input input:focus{
+    outline: none;
+}
+img{
+    display: block;
+
+}
+div{
+    position: relative;
+
+    width: 100%;
+}
+
+
+
+
+#nav{
+    background-color: #FFF;
+    box-shadow: 0px 2px 4px #4a4a4a;
+    height: 60px;
+    top: 0;
+}
+#fly_img{
+    display: inline-block;
+    height: 60px;
+    width: 147px;
+    top: -10px;
+    margin-right: 0;
+    
+}
+#fly_img img{
+    margin-top: 15px;   /*居中*/
+}
+
+
+
+
+
+
+#sub_nav{
+    height: 60px;
+    width: 1010px;
+    left: -505px;
+    margin-left: 50%;
+}
+#ul_wrapper{
+    display: inline-block;
+    height: 60px;
+    width: 520px;
+    float: right;
+
+}
+#ul_wrapper li{
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+    text-align: center;
+}
+#ul_wrapper li:hover{
+    background-color: #f4f4f4;
+}
+#ul_wrapper .nav_a{
+    color: #4a4a4a;
+    text-decoration: none;
+    line-height: 60px;
+}
+#feedback{
+    display: block;
+    top: 15px;
+    float: right;
+    margin-left: 20px;
+    width: 80px;
+    height: 23px;
+    background:linear-gradient(90deg,#5ce7bb,#89da84);
+    border-radius: 30px;
+    box-shadow: 0px 1px 4px #5ce7bb;
+    text-align: center;
+    padding-top: 7px;
+}
+#feedback:hover{
+    box-shadow: 0xp 1px 5px #5ce7bb;
+}
+.hov:hover #lit_ul{
+    display: block;
+}
+#lit_ul{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 340px;
+    height: 395px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px #4a4a4a;
+}
+#lit_ul::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 25px; 
+/*                  三角形           */
+    border-left:11.7px solid transparent;
+    border-right:11.7px solid transparent;
+    border-bottom:20px solid #fff;
+
+}
+#lit_ul::after{
+    content: "";
+    display: block;
+    /* border: 1px solid black; */
+/* 解决二级菜单难选中问题 */
+    position: absolute;
+    top: -23px;
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    
+}
+#lit_ul ul .colleli{
+    width: 170px;
+    height: 36px;
+    list-style: none;
+    text-align: left;
+}
+#lit_ul ul{
+    width: 170px;
+    float: left;
+}
+#lit_ul ul .colleli a{
+    text-align: center;
+    line-height: 36px;
+    width: 170px;
+    color: #4a4a4a;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#section{
+    height: 64px;
+    top: 116px;
+
+}
+#input_wrapper{
+    height: 64px;
+    width: 840px;
+    left: -420px;
+    margin-left: 50%;      /* 居中 */
+
+
+}
+.input_img_wrapper{
+    height: 64px;
+    width: 144px;
+    
+    display: inline-block;
+}
+.input_img_wrapper img{
+    height: 64px;
+    width: 64px;
+
+    float: left;
+}
+.input_img_wrapper img:first-child{
+    margin-right: 15px;
+}
+.input_img_wrapper::after{
+    content: "导航站";
+    font-size: 32px;
+    text-shadow:  0px 2px 4px #4a4a4a;
+    position: relative;
+    top: -65px;
+    left: 160px;
+    color:#fff;
+}
+.input_img_wrapper::before{
+    content: "中国矿业大学学生在线";
+    font-size: 12px;
+    text-shadow: 0px 2px 4px#4a4a4a;
+    color: #fff;
+    position: absolute;
+    left: 150px;
+    top: 48px;
+    width:200px;
+    
+}
+.nav_input{
+    display: block;
+    width: 480px;
+    height: 38px;
+    float: right;
+    box-shadow: 0px 2px 4px gray;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    top: 25px;
+
+}
+
+#in_put{
+    width:480px;
+    height: 38px;
+    display: inline-block;
+    float: right;
+
+    /* /////// */
+
+}
+.circle{
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    border: 2px solid rgba(150, 144, 144,0.5);
+    display: block;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 14px;
+    cursor: pointer;
+    outline: none;
+}
+.circle::after{
+    content:"";
+    -webkit-transform: rotate(45deg);
+    width:8px;
+    height: 2px;
+    position: absolute;
+    top:11px;
+    left:9px;
+    background-color: rgba(150, 144, 144,0.5);
+
+}
+.circle:active::after{
+    background-color: rgba(205, 192, 192, 0.5);
+}
+.circle:active{
+    outline: none;
+    border: 2px solid rgba(205, 192, 192, 0.5);
+}
+
+
+#face{
+    height: 420px;
+    width: 906px;
+    top: 238px;
+    left: -453px;
+    margin-left: 50%;    /* 居中 */
+}
+
+
+
+.card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px #fff;
+    height: 420px;
+    width: 280px;
+    float: left;
+}
+
+.card div{
+    height: 400px;
+    top: 20px;
+
+}
+.card div img{
+    position: relative;
+    top: 74px;
+    left: 43px;
+    width: 194px;
+    height: 157px;
+    -webkit-user-drag: none;
+}
+.vpn{
+    margin-left: 50%;
+    position: relative;
+    left: -60px;
+}
+.vpn::after{
+    content:"vpn";
+    font-size: 1px;
+    display: inline-block;
+    padding: 0 3px;
+    color: #FFF;
+    position: relative;
+    top: -8px;
+    background-color: #5ce7bb;
+    border-radius: 6px; 
+}
+.fast_track{
+    display: none;
+    position: relative;
+    top: -100px;
+}
+.fast_track li{
+    text-align: center;
+    margin-top: 16px;
+}
+.fast_track li a{
+    font-size: 16px;
+    margin-top: 16px;
+    color: #a5a1a1;
+    text-decoration: none; 
+}
+.font{
+    margin-left: 50%;
+    position: absolute;
+    top: 75%;
+    left: -60px;
+    font-size: 26px;
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mid{
+    margin: 0 30px 0 30px;
+}
+
+#footer{
+
+    height: 80px;
+    top: 328px;
+    background-color: #363636;
+    color: #b0b0b0;
+
+}
+#sub_footer{
+    height: 80px;
+    width: 1010px;
+    left: -505px;
+    margin-left: 50%;
+
+    display: block;
+}
+#sub_footer div{
+    height: 80px;
+    float: left;
+}
+#message{
+    width: 286px;
+}
+
+#blank{
+    text-align: center;
+    width: 150px;
+    margin-left: 144px;
+    margin-right: 190px;
+}
+#blank div{
+    margin-top: 24px;
+    width: 135px;
+    height: 32px;
+}
+#blank div span{
+    position: relative;
+    top: -20px;
+}
+
+#icon_wrapper{
+    float: right;
+    width: 240px;
+}
+#contact{
+    float: left;
+    font-size: 16px;
+    line-height: 80px;  
+    margin-right: 30px;
+    text-decoration: none;
+    color: #b0b0b0;
+}
+#jz{
+    /* outline: 1px solid pink; */
+    display: block;
+    height: 34px;
+    top: 50%;
+    transform: translateY(50%);
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    display: block;
+    float: left;
+    position: relative;
+    top: 25px;
+}
+.icon.mid{
+    margin: 0 20px 0 20px;
+}
+#qr.qr{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    top: -120px;
+    left: 90px;
+    background-color: #FFF;
+
+}
+.scanqr{
+    width: 100px;
+    height: 100px;
+
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+
+}
+#qr{
+    display: none;
+}
+
+
