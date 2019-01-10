@@ -5,6 +5,8 @@
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
 a{
     text-decoration: none;
     color: #fff;
@@ -29,11 +31,6 @@ input{
 img{
     display: block;
 
-}
-div{
-    position: relative;
-
-    width: 100%;
 }
 
 
@@ -64,7 +61,7 @@ div{
 
 #sub_nav{
     height: 60px;
-    width: 1010px;
+    width: 100%;
     left: -505px;
     margin-left: 50%;
 }
