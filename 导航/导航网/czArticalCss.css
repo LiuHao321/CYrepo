@@ -1,0 +1,98 @@
+#artical{
+    min-width: 1280px;
+    height: 64px;
+    position: relative;
+
+    text-align: center;
+}
+#artical_wrpper{
+    height: 130px;
+    width: 100%;
+    min-width: 1280px;
+    padding-top: 120px;
+
+}
+#width_wrapper{
+    width: 840px;
+    height: 64px;
+    display: inline-block;
+}
+#artical .img_wrapper{
+    /* float: left; */
+    margin-right: 15px;
+}
+.artical_img{
+    width: 64px;
+}
+.font_wrapper{
+    margin-left: 7px;
+}
+.left_inner_wrapper{
+    float: left;
+}
+#font_1{
+    color: #ffffff;
+    font-size: 32px;
+    text-shadow: 0px 2px 4px #817e7e;
+    display: block;
+}
+#font_2{
+    color: #ffffff;
+    text-shadow: 0px 2px 4px #817e7e;
+    font-size: 12px;
+}
+/*                          搜索栏                  */
+#input_wrapper{
+    display: inline-block;
+    background-color: #fff;
+    height: 38px;
+    float: right;
+    margin-top: 21px;
+    border: none;
+    padding-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px #e6e6e6;
+}
+
+#in_put{
+    width: 432px;
+    height: 38px;
+    font-size: 14px;
+    color: #b0b0b0;
+    outline: none;
+    border: none;
+}
+.circle{
+    margin-right: 14px;
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    border: 2px solid rgba(150, 144, 144,0.5);
+    display: block;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 14px;
+    cursor: pointer;
+    outline: none;
+}
+.circle::after{
+    content:"";
+    -webkit-transform: rotate(45deg);
+    width:8px;
+    height: 2px;
+    position: absolute;
+    top:11px;
+    left:9px;
+    background-color: rgba(150, 144, 144,0.5);
+
+}
+.circle:active::after{
+    background-color: rgba(205, 192, 192, 0.5);
+}
+.circle:active{
+    outline: none;
+    border: 2px solid rgba(205, 192, 192, 0.5);
+}
+
