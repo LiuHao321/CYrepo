@@ -1,5 +1,68 @@
-#section{height: 420px; /* width: 1280px; */ position: relative;
-
+/* 手机适配 */
+@media only screen and (max-width: 980px) {
+    #section{
+        display: none;
+    }
+    .ph_cardwrapper{
+        width: 400%;
+    }
+    .phone_section{
+        margin: 0 auto;
+        width: 94%;
+        height: 380px;
+        overflow: auto;
+    }
+    .phone_card{
+        height: 340px;
+        width: 260px;
+        float:left;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px #fff;
+        text-align: center;
+        background-color: #fff; 
+    }
+    .mid{
+        margin: 0 20px;
+    }
+    .ph_link{
+        margin-top: 40px;
+    }
+    .ph_link li{
+        text-align: center;
+        margin-top: 16px;
+    }
+    .ph_link li a{
+        font-size: 1em;
+        color: #a5a1a1;
+    }
+    .vpn{
+        margin-left: 50%;
+        position: relative;
+        left: -60px;
+    }
+    .vpn::after{
+        height: 15px;
+        content:"vpn";
+        line-height: 15px;
+        width: 28px;
+        display: inline-block;
+        color: #FFF;
+        position: relative;
+        top: -8px;
+        background-color: #5ce7bb;
+        border-radius: 18px; 
+    }
+}
+@media only screen and (min-width: 981px) {
+.phone_section{
+    display: none;
+}
+#ph_colleg-wrapper{
+    display: none;
+}
+#section{
+    height: 420px; /* width: 1280px; */ position: relative;
     text-align: center;
     min-width: 1280px;
 }
@@ -7,7 +70,6 @@
     display: inline-block;
     height: 420px;
 }
-
 .card{
     background-color: #fff;
     border: 1px solid #fff;
@@ -55,7 +117,7 @@
     margin-top: 16px;
 }
 .link li a{
-    font-size: 16px;
+    font-size: 1em;
     color: #a5a1a1;
 }
 .vpn{
@@ -76,6 +138,4 @@
     background-color: #5ce7bb;
     border-radius: 18px; 
 }
-
-
-
+}

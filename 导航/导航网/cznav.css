@@ -4,6 +4,65 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     list-style: none;
 }
+/* 手机端适配 */
+@media only screen and (max-width: 980px) {
+    html{
+        width: 100%;
+        height: 100%;
+        min-width: 480px;
+        min-height: 800px;
+    }
+    body{
+        background: url(./src/bgp.png) 100% no-repeat;
+        height: 100%;
+        min-height: 800px;
+    }
+    #preload { 
+        position: absolute;
+        display: none;
+     }
+    #flyimg{
+        height: 60%;
+        /* float: left; */
+    }
+    #top_nav_wrapper{
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+    }
+    a{
+        text-decoration: none;
+        color: #4a4a4a;
+    }
+    #ul_wrapper{
+        display: none;
+        margin-right:2%;
+        border: 4px solid #fff;
+        border-radius: 30%;
+        width: 3em;
+        height: 3em;
+        background: linear-gradient(#5ce7bb,#89da84);
+        text-align: center;
+    }
+    #ul_wrapper::after{
+        margin-top: 0.4em;
+        content: "≡";
+        display: inline-block;
+        color: #fff;
+        font-size: 3em;
+        vertical-align: middle;
+        line-height: 3px;  
+}
+    /* !!! */
+    #ul_wrapper ul {
+        display: none;
+    }
+    /* !!! */
+
+}
+/* 手机端适配 */
+@media only screen and (min-width: 981px) {
 html{
     height: 100%;
     min-height: 960px;
@@ -12,13 +71,26 @@ html{
 }
 body{
     background: url(./src/bgp.png) 100% no-repeat;
-    background-position:top;
     height: 100%;
     /* background-color: #363636; */
     width: 100%;
     /* height: 100%; */
     /* min-height: 960px; */
 }
+#preload { 
+    position: absolute;
+    display: none;
+ }
+/* #back-img{
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
+}
+#background-img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+} */
 a{
     text-decoration: none;
     color: #4a4a4a;
@@ -173,4 +245,5 @@ a{
     text-decoration: none;
     text-align: center;
     margin-left: 19px;
+}
 }

@@ -1,3 +1,38 @@
+@media only screen and (max-width: 980px){
+    #footer{
+        display: none;
+    }
+    #contain{
+        display: block;
+        height:  calc(100% - 80px);
+        min-height: calc(800px - 80px);
+    }
+    #ph_footer{
+        display: block;
+        height: 80px;
+        background-color: #363636;
+        text-align: center;
+    }
+    #ph_footer p{
+        line-height: 80px;
+        color: #b0b0b0;
+    }
+    #ph_footer p a{
+        color: #b0b0b0;
+    }
+    #ph_footer p a::after{
+        content: 'join us!';
+        color: #5ce7bb;
+        font-size: 0.1em;
+        position: relative;
+        left: 10px;
+        top: -8px;
+    }
+}
+@media only screen and (min-width: 981px) {
+#ph_footer{
+    display: none;
+}
 #footer{
     width: 100%;
     min-width:1280px;
@@ -71,22 +106,22 @@
     margin: 0 20px;
 }
 .qr{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: #fff;
     position: absolute;
     top: -100px;
-    left: 110px;
+    left: 90px;
     display: none;
 }
 .qr img{
-    width: 60px;
-    height: 60px;
-
+    width: 80px;
+    height: 80px;
     display: block;
     margin: auto;
     margin-top: 10px;
 }
 
+}
