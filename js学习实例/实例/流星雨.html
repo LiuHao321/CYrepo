@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    html{
+        height: 100%;width: 100%;
+    }
+    body{
+        overflow: hidden;
+        height: 100%;
+    }
+    canvas{
+        height: 100%;width: 100%;
+        transform: rotateZ(45deg);    }
+</style>
+<body>
+    <canvas></canvas>
+    <script>
+        // 流星雨   
+        //1.在画板上获取2d画布
+        //2.再规定好每颗星星的起始位置
+        //3.每次刷新画布  星星出现下次的位置
+        
+        //   获取画板对象
+        var canvas = document.getElementsByTagName('canvas');
+
+        //在画板上 获取2d画布  
+        var ctx = canvas[0].getContext('2d'); 
+
+        var star = '○',
+            W = document.body.clientWidth,
+            H = document.body.clientHeight;
+        
+        //根据星星的大小 计算 屏幕有多少列
+        var colums = Math.floor(W/30);
+        var drops = [];
+        for(var i = 0;i <colums;i++){             
+           drops[i] = 1;
+        }
+
+        function draw(){
+            ctx.fillStyle = 'rgba(255,255,255,0.2)';
+            ctx.fillRect(0,0,2*W,2*H);
+            ctx.font = '800 6px';
+            ctx.fillStyle = '#d453a9';
+
+            for(var i = 0;i < colums;i ++){
+                var x = i*30;
+                var y = drops[i]*10;
+                ctx.fillText(star,x,y);
+                if(y >= H && Math.random()>0.99 ){
+                    drops[i] = 0;
+                    console.log(Math.random()>0.5)
+                }
+                drops[i]++;
+            }
+        }
+        draw();
+        setInterval(draw,100);
+
+    </script>
+</body>
+</html>
